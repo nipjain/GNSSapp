@@ -4,7 +4,7 @@ import time
 
 broker_address="0b45b12d2ba4443688781b3165bbcfaa.s2.eu.hivemq.cloud"
 ser = serial.Serial('/dev/ttyS2',115200)
-client = mqtt.Client(client_id="IR1101gps", userdata=None, protocol=mqtt.MQTTv5)
+client = mqtt.Client(client_id="IR1800gps", userdata=None, protocol=mqtt.MQTTv5)
 client.tls_set(tls_version=mqtt.ssl.PROTOCOL_TLS)
 client.username_pw_set("cisco", "cisco123")
 client.connect(broker_address,8883)
