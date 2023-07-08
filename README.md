@@ -5,7 +5,8 @@ Simple Python app to stream data from GNSS module on the IR1800 and send to MQTT
 1. docker build -t gps .
 2. ./ioxclient docker package gps .
 3. use the OD or local manager to upload the start the APP
-4. user gnss_dr as the serial interface for IOX to stream data
+4. user "gnss_dr" as the serial interface for IOX to stream data
+5. give app ip of 192.168.1.2 / 24 , gw is 192.168.1.1
 
 SAMPLE Output will give gyro/accel data as well - you will need to parse the GPS data out. but this is the idea:
 
