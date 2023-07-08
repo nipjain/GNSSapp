@@ -18,3 +18,8 @@ b'STM3DGYRO,45031074,-41,-12,-83,0,211*4C\r\n'
 b'SENMSG,30,46324694,-165,173,16341*35\r\n'
 b'4,200,16345*3B\r\n'
 b'SG,30,50553209,-176,218,16368*33\r\n'
+
+
+to subscribe to the stream install mosquitto on your laptop and .... : 
+
+mosquitto_sub -h 0b45b12d2ba4443688781b3165bbcfaa.s2.eu.hivemq.cloud -p 8883 -u cisco -P cisco123 -t gps
